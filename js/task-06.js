@@ -2,7 +2,7 @@ const inputEl = document.querySelector("#validation-input");
 
 const validSymbolsLength = Number(inputEl.getAttribute("data-length"));
 
-const handeleSymbolsValid = (event) => {
+const handleSymbolsValid = (event) => {
   if (
     event.target.value.length === 0 ||
     event.target.value.length > validSymbolsLength
@@ -15,4 +15,4 @@ const handeleSymbolsValid = (event) => {
   }
 };
 
-inputEl.addEventListener("input", handeleSymbolsValid);
+inputEl.addEventListener("input", handleSymbolsValid);

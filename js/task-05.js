@@ -1,7 +1,7 @@
 const inputEl = document.querySelector("#name-input");
 const outputEl = document.querySelector("#name-output");
 
-const hendeleTextInput = (event) => {
+const handleTextInput = (event) => {
   if (inputEl.value !== "") {
     outputEl.textContent = event.currentTarget.value;
   } else {
@@ -9,4 +9,4 @@ const hendeleTextInput = (event) => {
   }
 };
 
-inputEl.addEventListener("input", hendeleTextInput);
+inputEl.addEventListener("input", handleTextInput);
